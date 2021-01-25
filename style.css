@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,700;1,300;1,900&display=swap');
+
+:root {
+    --off-white--: rgba(252, 251, 254, 1);
+    --nav-bar--: #6C6A6A;
+    --fresh-green--: #98AE49;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+/****************************
+******  NAVIGATION BAR ******
+****************************/
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 100vw;
+    background-color: var(--nav-bar--);
+    position: fixed;
+}
+
+.logo {
+    display: flex;
+    grid-column: 1 / 2;
+    justify-self: center;
+    align-self: center;
+}
+
+#header-img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    top: -0px;
+    background: url(chess-king-removebg-preview.png);
+    transform: rotate(10.58deg);
+}
+
+.logo > h1 {
+    color: var(--off-white--);
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 92%;
+    text-transform: uppercase;
+    width: 109px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 125px;
+}
+
+.shortcuts {
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.nav-link {
+    color: var(--off-white--);
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#nav-bar > button {
+    color: var(--off-white--);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px 24px;
+    border: 1px solid var(--fresh-green--);
+    background-color: var(--fresh-green--);
+    border-radius: 25px;
+    margin-right: 50px;
+}
