@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,700;1,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;300;400;700;900&display=swap');
 
 :root {
     --off-white--: rgba(252, 251, 254, 1);
@@ -12,8 +12,34 @@
     box-sizing: border-box;
 }
 
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+h5 {
+    margin: 0;
+}
+
+h6 {
+    margin: 0;
+}
+
 body {
     font-family: 'Exo 2', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 /****************************
@@ -27,7 +53,7 @@ body {
     height: 100px;
     width: 100vw;
     background-color: var(--nav-bar--);
-    position: fixed;
+    position: sticky;
 }
 
 .logo {
@@ -73,13 +99,100 @@ body {
     font-weight: 700;
 }
 
-#nav-bar > button {
+.btn {
     color: var(--off-white--);
-    font-size: 16px;
     font-weight: 700;
-    padding: 16px 24px;
-    border: 1px solid var(--fresh-green--);
+    padding: 16px 32px;
+    border: 3px solid var(--fresh-green--);
     background-color: var(--fresh-green--);
-    border-radius: 25px;
+    border-radius: 50px;
+}
+
+#nav-bar > button {
+    font-size: 16px;
     margin-right: 50px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--off-white--);
+    color: var(--fresh-green--);
+}
+
+
+
+/****************************
+******  MAIN - LANDING ******
+****************************/
+
+.landing {
+    height: calc(100vh - 100px);
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.landing-img {
+    grid-column: 8 / -1;
+    grid-row: 2 / 7;
+    background-image: url("steak-removebg-preview.png");
+    background-size: cover;
+}
+
+.title-container {
+    grid-column: 3 / 8;
+    grid-row: 2 / 6;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-lead {
+    display: block;
+    color: var(--nav-bar--);
+    font-size: 5vw;
+    font-weight: 400;
+    line-height: 90%;
+    margin-top: 20px;
+}
+
+.title {
+    line-height: 80%;
+    font-family: Exo 2;
+    font-weight: 900;
+    font-size: 7.8vw;
+    text-transform: uppercase;
+}
+
+.sub-title {
+    font-size: max(1.2vw, 16px);
+    font-weight: 300;
+    line-height: 200%;
+    text-transform: capitalize;
+    margin-top: 50px;
+
+}
+
+.landing-btn-container {
+    grid-column: 3 / 8;
+    grid-row: 5 / 6;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.landing-btn {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 24px 48px;
+}
+
+/* tidys up edge case monitor */
+@media screen and (max-height: 800px) {
+    .landing-btn {
+        margin-top: calc(60px + 10vh);
+    }
 }
