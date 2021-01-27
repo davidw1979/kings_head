@@ -15,7 +15,7 @@
 </head>
 <body>
     <header id="header">
-        <nav id="nav-bar">
+        <nav id="nav-bar" class="nav-bg">
             <div class="logo">
                 <img id="header-img" src="chess-king-removebg-preview.png" alt="chess king">
                 <h1>THE KINGS HEAD</h1>
@@ -27,26 +27,79 @@
                 <a href="#" class="nav-link">CONTACT</a>
             </div>
             <button class="btn">
-                ORDER
+                <a href="https://kingsheadtakeaway.touchtakeaway.net/menu">ORDER</a>
             </button>
         </nav>
     </header>
 
     <main>
-        <section class="landing">
+        <section id="landing">
             <div class="title-container">
                 <h2 class="title-lead">TOP BRITISH</h2>
                 <h2 class="title">PUB GRUB</h2>
-                <h3 class="sub-title">Freshly Prepared Pub Classics Using Local Produce. The Kings Head @ Lanchester Has You Covered During Lockdown.</h3>
+                <h4 class="sub-title">Freshly Prepared Pub Classics Using Local Produce. The Kings Head @ Lanchester Has You Covered During Lockdown.</h3>
+                <div class="landing-btn-container">
+                    <button class="btn landing-btn">
+                        <a href="https://kingsheadtakeaway.touchtakeaway.net/menu">ORDER DELIVERY</a>
+                    </button>
+                </div>
             </div>
             <div class="landing-img"></div>
-            <div class="landing-btn-container">
-                <button class="btn landing-btn">
-                    ORDER DELIVERY
-                </button>
+        </section>
+
+        <section id="accomodation">
+            <div class="nav-bg sect-title">
+                <h3>ACCOMODATION</h3>
+            </div>
+            <div class="sect-lead">
+                <h3>Comfort & Hospitality</h3>
+            </div>
+            <div class="dbl-container">
+                <div class="carousel">
+                    <button class="carousel__button carousel__button--left">
+                        <img src="left.svg" alt="">
+                    </button>
+                    <div class="carousel__track-container">
+                        <ul class="carousel__track">
+                            <li class="carousel__slide current-slide">
+                                <img class="carousel__image" src="hotel_room1.jpg" alt="Hotel Room Picture">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__image" src="hotel_room2.jpg" alt="Hotel Room Picture">
+                            </li>
+                            <li class="carousel__slide">
+                                <img class="carousel__image" src="hotel_room3.jpg" alt="Hotel Room Picture">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="carousel__button carousel__button--right">
+                        <img src="right.svg" alt="">
+                    </button>
+
+                    <div class="carousel__nav">
+                        <button class="carousel__indicator current-slide"></button>
+                        <button class="carousel__indicator"></button>
+                        <button class="carousel__indicator"></button>
+                    </div>
+                </div>
+
+                <!--<div class="rm-text">
+
+                </div>-->
             </div>
         </section>
+
+        <!--<section id="contact">
+            <div class="nav-bg sect-title">
+                <h3>CONTACT</h3>
+            </div>
+            <div class="sect-lead">
+                <h3>Get in Touch</h3>
+            </div>
+        </section>-->
     </main>
     
+    <script src="js/carousel.js"></script>
 </body>
 </html>
