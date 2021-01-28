@@ -48,6 +48,7 @@ body {
 
 #nav-bar {
     position: fixed;
+    z-index: 2;
 }
 
 .nav-bg {
@@ -212,34 +213,78 @@ section {
     max-width: 100vw;
 }
 
-.sect-title > h3 {
-    color: var(--off-white--);
-    font-weight: 900;
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
 .sect-lead {
     display: flex;
     justify-content: center;
-    margin-top: 4em;
+    margin-bottom: 2em;
 }
 
 .sect-lead > h3 {
     font-size: 4em;
     font-weight: 300;
+    color: black;
+}
+
+/************************
+******  ROOMS SECT ******
+************************/
+
+.dbl-container {
+    display: flex;
+    width: 100vw;
+    height: 350px;
+    justify-content: center;
+}
+
+.rm-text {
+    align-content: center;
+    width: 35%;
+    height: 350px;
+    font-size: max(1.2vw, 16px);
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.rm-text p {
+    line-height: 200%;
+    font-weight: 300;
+}
+
+li i {
     color: var(--fresh-green--);
 }
 
-/*******************************
-******  ACCOMODATION SECT ******
-*******************************/
+li {
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: max(1.5vw, 16px);
+    font-weight: 700;
+    line-height: 200%;
+    margin-top: 2em;
+}
+
+.container > p > i {
+    margin-right: 1rem;
+    color: var(--fresh-green--);
+}
+
+
+/*****  Carousel ******/
+
 
 .carousel {
     position: relative;
     height: 300px;
-    width: 30%;
-    margin: auto;
+    width: 35%;
+    margin: 2em 2em 0 0;
 }
 
 .carousel__image {
@@ -277,6 +322,10 @@ section {
     background: transparent;
     border: 0;
     cursor: pointer;
+}
+
+.carousel__button:focus {
+    outline: none;
 }
 
 .carousel__button--left {
@@ -317,4 +366,12 @@ section {
 
 .is-hidden {
     display: none;
+}
+
+/**************************
+******  CONTACT SECT ******
+***************************/
+
+#contact {
+    margin-top: 4em;
 }
