@@ -209,7 +209,8 @@ body {
 *******************************/
 
 section {
-    height: calc(100vh - 100px);
+    /*height: calc(100vh - 100px);*/
+    height: fit-content;
     max-width: 100vw;
 }
 
@@ -374,4 +375,23 @@ li {
 
 #contact {
     margin-top: 4em;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 200px;
+    width: 300px;
+    margin-right: 2em;
+}
+
+#address {
+    width: 35%;
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+}
+
+#address ul {
+    list-style: none;
 }

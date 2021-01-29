@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <script> src="app.js"</script>
     <!--Import FontAwesome icons-->
     <script src="https://kit.fontawesome.com/27726bfc44.js" crossorigin="anonymous"></script>
-
+    
     <!--Import own CSS stylesheet-->
     <link rel="stylesheet" href="style.css">
 
@@ -100,12 +100,34 @@
         </section>
     
         <section id="contact">
-            <div class="sect-lead">
+            <!--<div class="sect-lead">
                 <h3>Get in Touch</h3>
+            </div>-->
+
+            <div class="dbl-container">
+                <!--The div element for the map -->
+                <div id="map"></div>
+                <div id="address">
+                    <ul>
+                        <li>1 Station Road,</li>
+                        <li>Lanchester,</li>
+                        <li>Durham</li>
+                        <li>DH7 0EX</li>
+                    </ul>
+                </div>
             </div>
+            
         </section>
     </main>
+
+    <script src="js/app.js"></script>
     
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSfnV9BBXGpvz0WVrF2dHEmrElf_dzZJA&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+
     <script src="js/carousel.js"></script>
+    
 </body>
 </html>
